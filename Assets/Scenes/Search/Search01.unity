@@ -232,6 +232,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 66267816}
     m_Modifications:
+    - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 6622475202520865962, guid: f4ce07fb2b44acd44814d1393c0f984b, type: 3}
+    - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
+      propertyPath: flid_enemy1
+      value: 
+      objectReference: {fileID: 839171980}
+    - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
+      propertyPath: flid_enemy2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
+      propertyPath: Enemy_Metro_obj
+      value: 
+      objectReference: {fileID: 839171980}
     - target: {fileID: 7381596311384018770, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -443,6 +459,11 @@ RectTransform:
 --- !u!224 &798051272 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5095839599542745649, guid: a8e1010cd3fcb59408956bbbb527b936, type: 3}
+  m_PrefabInstance: {fileID: 5095839598895723001}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &839171980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5095839599542745662, guid: a8e1010cd3fcb59408956bbbb527b936, type: 3}
   m_PrefabInstance: {fileID: 5095839598895723001}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1435915667
@@ -3332,9 +3353,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5095839599542745653, guid: a8e1010cd3fcb59408956bbbb527b936, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 6622475202520865962, guid: f4ce07fb2b44acd44814d1393c0f984b, type: 3}
     - target: {fileID: 5095839599542745662, guid: a8e1010cd3fcb59408956bbbb527b936, type: 3}
       propertyPath: m_Name
       value: Metro
+      objectReference: {fileID: 0}
+    - target: {fileID: 5095839599542745662, guid: a8e1010cd3fcb59408956bbbb527b936, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8e1010cd3fcb59408956bbbb527b936, type: 3}

@@ -9,6 +9,14 @@ TagManager:
   - Stairs
   - Enemy
   - Judge
+  - Enemy_Metro
+  - Enemy_Cobra
+  - Enemy_Penguin
+  - Enemy_Slime
+  - Enemy_Metro2
+  - Enemy_Cobra2
+  - Enemy_Penguin2
+  - Enemy_Slime2
   layers:
   - Default
   - TransparentFX
