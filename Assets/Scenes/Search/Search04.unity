@@ -164,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5676425005033438996, guid: 93f716dffc142d54da69c8affdf433b6, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -300
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5676425005033438996, guid: 93f716dffc142d54da69c8affdf433b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -200,7 +200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5676425005033438996, guid: 93f716dffc142d54da69c8affdf433b6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5676425005033438996, guid: 93f716dffc142d54da69c8affdf433b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -315,6 +315,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 16075979}
     m_Modifications:
+    - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
+      propertyPath: flid_enemy1
+      value: 
+      objectReference: {fileID: 1977067762}
+    - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
+      propertyPath: flid_enemy2
+      value: 
+      objectReference: {fileID: 1065316270}
     - target: {fileID: 7381596311384018770, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2337,6 +2345,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2123398670029219886, guid: 383d70a61654f0d4ebc9cda19c976b64, type: 3}
   m_PrefabInstance: {fileID: 1065316268}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1065316270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2123398670029219887, guid: 383d70a61654f0d4ebc9cda19c976b64, type: 3}
+  m_PrefabInstance: {fileID: 1065316268}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1196131403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2789,10 +2802,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime
       objectReference: {fileID: 0}
+    - target: {fileID: 2123398670029219887, guid: 383d70a61654f0d4ebc9cda19c976b64, type: 3}
+      propertyPath: m_TagString
+      value: Enemy_Slime2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383d70a61654f0d4ebc9cda19c976b64, type: 3}
 --- !u!224 &1977067761 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2123398670029219886, guid: 383d70a61654f0d4ebc9cda19c976b64, type: 3}
+  m_PrefabInstance: {fileID: 1977067760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1977067762 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2123398670029219887, guid: 383d70a61654f0d4ebc9cda19c976b64, type: 3}
   m_PrefabInstance: {fileID: 1977067760}
   m_PrefabAsset: {fileID: 0}

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class NodeMove : MonoBehaviour
 {
     public Rigidbody2D rigidBody;
+    [SerializeField]
     private float moveSpeed = -10.0f;
 
     // Start is called before the first frame update

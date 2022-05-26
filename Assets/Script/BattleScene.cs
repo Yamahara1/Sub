@@ -9,6 +9,8 @@ public class BattleScene : MonoBehaviour
     Player player;
     Enemy enemy;
 
+    //エネミーは一定時間で攻撃(のちに実行)
+
     public GameObject Enemy_Metro;
     public GameObject Enemy_Cobra;
     public GameObject Enemy_Penguin;

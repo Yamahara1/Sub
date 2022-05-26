@@ -254,11 +254,65 @@ public class Player : MonoBehaviour
             rect.localPosition = pos;
         }
 
-        if (hit_enemy2 && SceneManager.GetActiveScene().name == "Search02")
+        if (hit_enemy2 && GetSearch(2))
         {
             flid_enemy2.SetActive(false);
             pos.x = -200.0f;
             pos.y = 0.0f;
+            pos.z = 0.0f;
+            rect.localPosition = pos;
+        }
+
+        if (hit_enemy1 && GetSearch(3))
+        {
+            flid_enemy1.SetActive(false);
+            pos.x = 400.0f;
+            pos.y = 200.0f;
+            pos.z = 0.0f;
+            rect.localPosition = pos;
+        }
+
+        if (hit_enemy2 && GetSearch(3))
+        {
+            flid_enemy2.SetActive(false);
+            pos.x = -500.0f;
+            pos.y = 100.0f;
+            pos.z = 0.0f;
+            rect.localPosition = pos;
+        }
+
+        if (hit_enemy1 && GetSearch(4))
+        {
+            flid_enemy1.SetActive(false);
+            pos.x = -200.0f;
+            pos.y = 0.0f;
+            pos.z = 0.0f;
+            rect.localPosition = pos;
+        }
+
+        if (hit_enemy2 && GetSearch(4))
+        {
+            flid_enemy2.SetActive(false);
+            pos.x = 400.0f;
+            pos.y = 100.0f;
+            pos.z = 0.0f;
+            rect.localPosition = pos;
+        }
+
+        if (hit_enemy1 && GetSearch(5))
+        {
+            flid_enemy1.SetActive(false);
+            pos.x = -200.0f;
+            pos.y = 0.0f;
+            pos.z = 0.0f;
+            rect.localPosition = pos;
+        }
+
+        if (hit_enemy2 && GetSearch(5))
+        {
+            flid_enemy2.SetActive(false);
+            pos.x = 400.0f;
+            pos.y = 100.0f;
             pos.z = 0.0f;
             rect.localPosition = pos;
         }

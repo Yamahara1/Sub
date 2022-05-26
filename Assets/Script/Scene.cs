@@ -93,14 +93,15 @@ public class Scene : MonoBehaviour
             GetSetFlgScene = false;
 
             // NodeSceneÇÃèàóù
-            if (SceneFlgNum == 1 || SceneFlgNum == 2 || SceneFlgNum == 3 ||
-                SceneFlgNum == 4 || SceneFlgNum == 5 || SceneFlgNum == 6 ||
-                SceneFlgNum == 7 || SceneFlgNum == 8 || SceneFlgNum == 9 || SceneFlgNum == 10)  
+            if (SceneFlgNum == 10)  
             {
                 SceneManager.LoadSceneAsync("Node", LoadSceneMode.Additive);
                 GetSetFlgScene = false;
             }
-            else if (SceneFlgNum == 8 || SceneFlgNum == 9) 
+            else if (SceneFlgNum == 1 || SceneFlgNum == 2 || SceneFlgNum == 3 ||
+                SceneFlgNum == 4 || SceneFlgNum == 5 || SceneFlgNum == 6 ||
+                SceneFlgNum == 7 || SceneFlgNum == 8 || SceneFlgNum == 9 ||
+                SceneFlgNum == 11 || SceneFlgNum == 12) 
             {
                 SceneManager.UnloadSceneAsync("Node");
                 GetSetFlgScene = true;
