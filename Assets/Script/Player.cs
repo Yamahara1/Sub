@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     public Slider slider;
     public Rigidbody2D rigidBody;
 
-    private static int currentHP = 11;
+    private static int currentHP = 10;
     private static int playerMoveY = 100;
     private static int playerMoveX = 100;
 

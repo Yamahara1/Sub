@@ -44,10 +44,12 @@ public class BattleScene : MonoBehaviour
             Enemy_Slime.SetActive(true);
         }
 
+        // プレイヤーのHPによるシーン遷移
         if (player.GetSetPlayerHP <= 0)
         {
             scene.ChangeScene((int)Scene.SceneName.GameOver);
         }
+        // エネミーのHPによるシーン遷移
         if (enemy.GetSetEnemyHP <= 0)
         {
             scene.ChangeScene((int)Scene.SceneName.GameClear);
