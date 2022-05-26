@@ -311,11 +311,66 @@ public class Player : MonoBehaviour
         if (hit_enemy2 && GetSearch(5))
         {
             flid_enemy2.SetActive(false);
-            pos.x = 400.0f;
+            pos.x = 200.0f;
+            pos.y = -200.0f;
+            pos.z = 0.0f;
+            rect.localPosition = pos;
+        }
+
+        if (hit_enemy1 && GetSearch(6))
+        {
+            flid_enemy1.SetActive(false);
+            pos.x = -300.0f;
             pos.y = 100.0f;
             pos.z = 0.0f;
             rect.localPosition = pos;
         }
+
+        if (hit_enemy2 && GetSearch(6))
+        {
+            flid_enemy2.SetActive(false);
+            pos.x = 200.0f;
+            pos.y = -100.0f;
+            pos.z = 0.0f;
+            rect.localPosition = pos;
+        }
+
+        if (hit_enemy1 && GetSearch(7))
+        {
+            flid_enemy1.SetActive(false);
+            pos.x = 100.0f;
+            pos.y = 200.0f;
+            pos.z = 0.0f;
+            rect.localPosition = pos;
+        }
+
+        if (hit_enemy2 && GetSearch(7))
+        {
+            flid_enemy2.SetActive(false);
+            pos.x = -400.0f;
+            pos.y = -200.0f;
+            pos.z = 0.0f;
+            rect.localPosition = pos;
+        }
+
+        if (hit_enemy1 && GetSearch(8))
+        {
+            flid_enemy1.SetActive(false);
+            pos.x = 200.0f;
+            pos.y = -100.0f;
+            pos.z = 0.0f;
+            rect.localPosition = pos;
+        }
+
+        if (hit_enemy2 && GetSearch(8))
+        {
+            flid_enemy2.SetActive(false);
+            pos.x = -300.0f;
+            pos.y = 0.0f;
+            pos.z = 0.0f;
+            rect.localPosition = pos;
+        }
+
     }
 
     // Update is called once per frame

@@ -315,11 +315,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cobra (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7166311175136114327, guid: d4ab9210087c71043a7f75b07566bcd1, type: 3}
+      propertyPath: m_TagString
+      value: Enemy_Cobra2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4ab9210087c71043a7f75b07566bcd1, type: 3}
 --- !u!224 &74354773 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7166311175136114326, guid: d4ab9210087c71043a7f75b07566bcd1, type: 3}
+  m_PrefabInstance: {fileID: 74354772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &74354774 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7166311175136114327, guid: d4ab9210087c71043a7f75b07566bcd1, type: 3}
   m_PrefabInstance: {fileID: 74354772}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &458617304
@@ -3386,6 +3395,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7166311175136114326, guid: d4ab9210087c71043a7f75b07566bcd1, type: 3}
   m_PrefabInstance: {fileID: 1641695030}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1641695032 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7166311175136114327, guid: d4ab9210087c71043a7f75b07566bcd1, type: 3}
+  m_PrefabInstance: {fileID: 1641695030}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1770255176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3393,6 +3407,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 668722895}
     m_Modifications:
+    - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
+      propertyPath: flid_enemy1
+      value: 
+      objectReference: {fileID: 1641695032}
+    - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
+      propertyPath: flid_enemy2
+      value: 
+      objectReference: {fileID: 74354774}
     - target: {fileID: 7381596311384018770, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
       propertyPath: m_Name
       value: Player

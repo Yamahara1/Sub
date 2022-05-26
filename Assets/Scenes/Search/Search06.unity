@@ -225,6 +225,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 606485723383467432, guid: a73471aa0c49a2e4caa8123472034338, type: 3}
   m_PrefabInstance: {fileID: 127692638}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &127692640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7248639085714759225, guid: a73471aa0c49a2e4caa8123472034338, type: 3}
+  m_PrefabInstance: {fileID: 127692638}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &193289940
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2405,11 +2410,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Penguin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7248639085714759225, guid: a73471aa0c49a2e4caa8123472034338, type: 3}
+      propertyPath: m_TagString
+      value: Enemy_Penguin2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a73471aa0c49a2e4caa8123472034338, type: 3}
 --- !u!224 &884104591 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 606485723383467432, guid: a73471aa0c49a2e4caa8123472034338, type: 3}
+  m_PrefabInstance: {fileID: 884104590}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &884104592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7248639085714759225, guid: a73471aa0c49a2e4caa8123472034338, type: 3}
   m_PrefabInstance: {fileID: 884104590}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1149059874
@@ -2621,6 +2635,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1326862845}
     m_Modifications:
+    - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
+      propertyPath: flid_enemy1
+      value: 
+      objectReference: {fileID: 127692640}
+    - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
+      propertyPath: flid_enemy2
+      value: 
+      objectReference: {fileID: 884104592}
     - target: {fileID: 7381596311384018770, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
       propertyPath: m_Name
       value: Player
