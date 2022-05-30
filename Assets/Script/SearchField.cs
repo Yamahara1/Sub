@@ -39,7 +39,7 @@ public class SearchField : MonoBehaviour
             scene.ChangeScene((int)Scene.SceneName.Search02);
             nextScene = false;
         }
-        if (SceneManager.GetActiveScene().name == "Search02"&&nextScene)
+        if (SceneManager.GetActiveScene().name == "Search02"&& nextScene)
         {
             player = gameObject.AddComponent<Player>();
             player.ResetHit_Enemy();

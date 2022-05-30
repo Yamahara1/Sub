@@ -316,13 +316,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 16075979}
     m_Modifications:
     - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 6622475202520865962, guid: f4ce07fb2b44acd44814d1393c0f984b, type: 3}
+    - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
       propertyPath: flid_enemy1
       value: 
-      objectReference: {fileID: 1977067762}
+      objectReference: {fileID: 1065316270}
     - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
       propertyPath: flid_enemy2
       value: 
-      objectReference: {fileID: 1065316270}
+      objectReference: {fileID: 1977067762}
     - target: {fileID: 7381596311384018770, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2337,6 +2341,10 @@ PrefabInstance:
     - target: {fileID: 2123398670029219887, guid: 383d70a61654f0d4ebc9cda19c976b64, type: 3}
       propertyPath: m_Name
       value: Slime (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2123398670029219887, guid: 383d70a61654f0d4ebc9cda19c976b64, type: 3}
+      propertyPath: m_TagString
+      value: Enemy_Slime
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383d70a61654f0d4ebc9cda19c976b64, type: 3}
