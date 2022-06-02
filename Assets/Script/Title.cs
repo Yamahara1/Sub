@@ -5,12 +5,19 @@ using UnityEngine;
 public class Title : MonoBehaviour
 {
     Scene scene;
+    Player player;
+    Enemy enemy;
     private bool trig;
 
     // Start is called before the first frame update
     void Start()
     {
         scene = gameObject.AddComponent<Scene>();
+        player = gameObject.AddComponent<Player>();
+        enemy = gameObject.AddComponent<Enemy>();
+
+        player.GetSetPlayerHP = 10;
+        enemy.GetSetEnemyHP = 20;
     }
 
     // Update is called once per frame

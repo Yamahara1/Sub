@@ -136,6 +136,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 970392299}
     m_Modifications:
     - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 6622475202520865962, guid: f4ce07fb2b44acd44814d1393c0f984b, type: 3}
+    - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
       propertyPath: flid_enemy1
       value: 
       objectReference: {fileID: 90552767}
@@ -813,6 +817,10 @@ PrefabInstance:
     - target: {fileID: 5095839599542745649, guid: a8e1010cd3fcb59408956bbbb527b936, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5095839599542745653, guid: a8e1010cd3fcb59408956bbbb527b936, type: 3}
+      propertyPath: slider
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5095839599542745662, guid: a8e1010cd3fcb59408956bbbb527b936, type: 3}
       propertyPath: m_Name

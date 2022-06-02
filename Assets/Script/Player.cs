@@ -234,8 +234,6 @@ public class Player : MonoBehaviour
         // Slider‚ð–žƒ^ƒ“
         slider.value = currentHP;
 
-        SetSearch();
-
         if (hit_enemy1 && GetSearch(1))
         {
           flid_enemy1.SetActive(false);
@@ -251,7 +249,7 @@ public class Player : MonoBehaviour
             pos.x = 400.0f;
             pos.y = -100.0f;
             pos.z = 0.0f;
-            rect.localPosition = pos;
+            rect.localPosition = pos;          
         }
 
         if (hit_enemy2 && GetSearch(2))
@@ -263,6 +261,10 @@ public class Player : MonoBehaviour
             rect.localPosition = pos;
         }
 
+        if(hit_enemy1)
+        {
+            Debug.Log("hit");
+        }
         if (hit_enemy1 && GetSearch(3))
         {
             flid_enemy1.SetActive(false);
@@ -276,7 +278,7 @@ public class Player : MonoBehaviour
         {
             flid_enemy2.SetActive(false);
             pos.x = -500.0f;
-            pos.y = 100.0f;
+            pos.y = -100.0f;
             pos.z = 0.0f;
             rect.localPosition = pos;
         }
@@ -356,8 +358,8 @@ public class Player : MonoBehaviour
         if (hit_enemy1 && GetSearch(8))
         {
             flid_enemy1.SetActive(false);
-            pos.x = 200.0f;
-            pos.y = -100.0f;
+            pos.x = -300.0f;
+            pos.y = 0.0f;
             pos.z = 0.0f;
             rect.localPosition = pos;
         }
@@ -365,8 +367,8 @@ public class Player : MonoBehaviour
         if (hit_enemy2 && GetSearch(8))
         {
             flid_enemy2.SetActive(false);
-            pos.x = -300.0f;
-            pos.y = 0.0f;
+            pos.x = 200.0f;
+            pos.y = -100.0f;
             pos.z = 0.0f;
             rect.localPosition = pos;
         }
@@ -457,12 +459,15 @@ public class Player : MonoBehaviour
             SetEnemy(0);
             SetHit_Enemy(1);
             scene.ChangeScene((int)Scene.SceneName.Battle);
+            return;
+            
         }
         if (other.gameObject.CompareTag("Enemy_Metro2"))
         {
             SetEnemy(0);
             SetHit_Enemy(2);
             scene.ChangeScene((int)Scene.SceneName.Battle);
+            return;
         }
 
         if (other.gameObject.CompareTag("Enemy_Cobra"))
@@ -470,38 +475,44 @@ public class Player : MonoBehaviour
             SetEnemy(1);
             SetHit_Enemy(1);
             scene.ChangeScene((int)Scene.SceneName.Battle);
+            return;
         }
         if (other.gameObject.CompareTag("Enemy_Cobra2"))
         {
             SetEnemy(1);
             SetHit_Enemy(2);
             scene.ChangeScene((int)Scene.SceneName.Battle);
+            return;
         }
 
         if (other.gameObject.CompareTag("Enemy_Penguin"))
         {
             SetEnemy(2);
-            SetEnemy(1);
+            SetHit_Enemy(1);
             scene.ChangeScene((int)Scene.SceneName.Battle);
+            return;
         }
         if (other.gameObject.CompareTag("Enemy_Penguin2"))
         {
             SetEnemy(2);
-            SetEnemy(2);
+            SetHit_Enemy(2);
             scene.ChangeScene((int)Scene.SceneName.Battle);
+            return;
         }
 
         if (other.gameObject.CompareTag("Enemy_Slime"))
         {
             SetEnemy(3);
-            SetEnemy(1);
+            SetHit_Enemy(1);
             scene.ChangeScene((int)Scene.SceneName.Battle);
+            return;
         }
         if (other.gameObject.CompareTag("Enemy_Slime2"))
         {
             SetEnemy(3);
-            SetEnemy(2);
+            SetHit_Enemy(2);
             scene.ChangeScene((int)Scene.SceneName.Battle);
+            return;
         }
 
 

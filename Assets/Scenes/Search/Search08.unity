@@ -317,7 +317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7166311175136114327, guid: d4ab9210087c71043a7f75b07566bcd1, type: 3}
       propertyPath: m_TagString
-      value: Enemy_Cobra2
+      value: Enemy_Cobra
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4ab9210087c71043a7f75b07566bcd1, type: 3}
@@ -3388,6 +3388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cobra
       objectReference: {fileID: 0}
+    - target: {fileID: 7166311175136114327, guid: d4ab9210087c71043a7f75b07566bcd1, type: 3}
+      propertyPath: m_TagString
+      value: Enemy_Cobra2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4ab9210087c71043a7f75b07566bcd1, type: 3}
 --- !u!224 &1641695031 stripped
@@ -3408,13 +3412,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 668722895}
     m_Modifications:
     - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 6622475202520865962, guid: f4ce07fb2b44acd44814d1393c0f984b, type: 3}
+    - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
       propertyPath: flid_enemy1
       value: 
-      objectReference: {fileID: 1641695032}
+      objectReference: {fileID: 74354774}
     - target: {fileID: -608255866355014834, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
       propertyPath: flid_enemy2
       value: 
-      objectReference: {fileID: 74354774}
+      objectReference: {fileID: 1641695032}
     - target: {fileID: 7381596311384018770, guid: 9f082937a67f48d42b946724d8057c6b, type: 3}
       propertyPath: m_Name
       value: Player
