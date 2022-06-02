@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     Scene scene;
     RectTransform rect;
     SearchField search;
+    public NodeMove node;
     public Slider slider;
     public Rigidbody2D rigidBody;
 
@@ -17,7 +18,6 @@ public class Player : MonoBehaviour
     private static int playerMoveY = 100;
     private static int playerMoveX = 100;
 
-    private bool trg;
     private bool StageTrg = true;
 
     //敵の種類のフラグ　これでバトル時の敵の種類を決定する
@@ -227,6 +227,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         scene = gameObject.AddComponent<Scene>();
+        node = gameObject.GetComponent<NodeMove>();
         search = gameObject.AddComponent<SearchField>();
         rect = gameObject.GetComponent<RectTransform>();
         rigidBody = gameObject.GetComponent<Rigidbody2D>();
@@ -374,7 +375,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(SceneManager.GetActiveScene().name== "Battle")
+        if (SceneManager.GetActiveScene().name == "Battle" &&
+            node.GetSetDamageflgP)
         {
             PlayerBattle();
         }
@@ -392,18 +394,15 @@ public class Player : MonoBehaviour
 
     private void PlayerBattle()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && trg)
-        {
-            // ダメージランダム
-            int damage = 1;
+        // ダメージランダム
+        int damage = 1;
 
-            // HPからダメージを引く
-            currentHP -= damage;
+        // HPからダメージを引く
+        currentHP -= damage;
 
-            trg = false;
-        }
         slider.value = currentHP;
-        trg = true;
+
+        node.GetSetDamageflgP = false;
     }
 
     private void PlayerMove()
@@ -428,6 +427,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.gameObject.CompareTag("Stairs"))
         {
             search.GetSetNextFlg = true;

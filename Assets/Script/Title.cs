@@ -15,9 +15,6 @@ public class Title : MonoBehaviour
         scene = gameObject.AddComponent<Scene>();
         player = gameObject.AddComponent<Player>();
         enemy = gameObject.AddComponent<Enemy>();
-
-        player.GetSetPlayerHP = 10;
-        enemy.GetSetEnemyHP = 20;
     }
 
     // Update is called once per frame

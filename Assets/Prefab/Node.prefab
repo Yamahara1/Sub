@@ -128,3 +128,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 0}
+  moveSpeed: -10
+  DamageflgP: 0
+  DamageflgE: 0
