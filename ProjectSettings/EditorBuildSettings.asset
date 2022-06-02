@@ -47,4 +47,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: f50a56dc0947f974f983afe21e540dc3
+  - enabled: 1
+    path: Assets/Scenes/Story/00.tutorial_Part1.unity
+    guid: 2a949e6173c337049bb105ddacd6d848
+  - enabled: 1
+    path: Assets/Scenes/Story/00.tutorial_Part2.unity
+    guid: a16917d4cca372d4191898b4249df966
+  - enabled: 1
+    path: Assets/Scenes/Story/01.Face-to-face_with_Kuda.unity
+    guid: eb973d825488f6044987a8dfc9622bce
+  - enabled: 1
+    path: Assets/Scenes/Story/02.kuda'spikup.unity
+    guid: 86dafe88b23bc814d80a30a462835249
+  - enabled: 1
+    path: Assets/Scenes/Story/03.treachery.unity
+    guid: d11a905b6f6ee324393c21db36eec3a5
+  - enabled: 1
+    path: Assets/Scenes/Story/04.arrest.unity
+    guid: 6df33dc1032ed79429ea0ff6943ae95f
+  - enabled: 1
+    path: Assets/Scenes/Story/05.late_of_rescue.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Story/07.final_battle.unity
+    guid: 1b8d600b6b0573349bdfd97c95ba6759
+  - enabled: 1
+    path: Assets/Scenes/Story/08.after_win.unity
+    guid: 7002ed30b2e105a4f97c6a09ec36de8b
   m_configObjects: {}

@@ -261,10 +261,6 @@ public class Player : MonoBehaviour
             rect.localPosition = pos;
         }
 
-        if(hit_enemy1)
-        {
-            Debug.Log("hit");
-        }
         if (hit_enemy1 && GetSearch(3))
         {
             flid_enemy1.SetActive(false);

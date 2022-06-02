@@ -347,6 +347,10 @@ MonoBehaviour:
   - "\u30B7\u30F3\uFF1A\u300C\u2026\u3000\u2026\u3000\u2026\u300D"
   - "\u7121\u53E3\u306A\u6027\u683C\u306E\u30B7\u30F3\u306F\u4F55\u3082\u8A00\u3048\u306A\u304B\u3063\u305F\u3002"
   - "\u30AB\u30B9\u30DF\u4E00\u884C\u306F\u305D\u306E\u307E\u307E\u65C5\u3092\u7D9A\u3051\u308B\u3002"
+  Kasumi: {fileID: 0}
+  Shin: {fileID: 0}
+  Kuda: {fileID: 0}
+  TextCount: 0
 --- !u!114 &619856704
 MonoBehaviour:
   m_ObjectHideFlags: 0

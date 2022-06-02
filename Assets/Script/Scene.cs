@@ -7,6 +7,7 @@ public class Scene : MonoBehaviour
 {
     private int SceneFlgNum = 0;
     private bool Sceneflg = false;
+   private SearchField search;
 
     public int GetSetSceneFlg
     {
@@ -35,11 +36,21 @@ public class Scene : MonoBehaviour
         Battle,
         GameClear,
         GameOver,
+        tutorial1,
+        tutorial2,
+        Story01,
+        Story02,
+        Story03,
+        Story04,
+        Story05,
+        Story07,
+        Story08,
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        search.gameObject.AddComponent<SearchField>();
     }
 
     // Update is called once per frame
@@ -89,6 +100,33 @@ public class Scene : MonoBehaviour
                 case 12: // ゲームオーバーシーン
                     SceneManager.LoadScene("GameOver"); 
                     break;
+                case 13:
+                    SceneManager.LoadScene("00.tutorial_Part1");
+                    break;
+                case 14:
+                    SceneManager.LoadScene("00.tutorial_Part2");
+                    break;
+                case 15:
+                    SceneManager.LoadScene("01.Face-to-face_with_Kuda");
+                    break;
+                case 16:
+                    SceneManager.LoadScene("02.kuda'spikup");
+                    break;
+                case 17:
+                    SceneManager.LoadScene("03.treachery");
+                    break;
+                case 18:
+                    SceneManager.LoadScene("04.arrest");
+                    break;
+                case 19:
+                    SceneManager.LoadScene("05.late_of_rescue");
+                    break;
+                case 20:
+                    SceneManager.LoadScene("07.final_battle");
+                    break;
+                case 21:
+                    SceneManager.LoadScene("08.after_win");
+                    break;
             }
             GetSetFlgScene = false;
 
@@ -106,6 +144,7 @@ public class Scene : MonoBehaviour
                 SceneManager.UnloadSceneAsync("Node");
                 GetSetFlgScene = true;
             }
+
         }
     }
 
