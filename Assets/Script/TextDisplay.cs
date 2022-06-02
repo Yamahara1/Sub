@@ -9,9 +9,9 @@ public class TextDisplay : MonoBehaviour
     int textCharNumber;
     int displayTextSpeed;
     bool click;
-    public GameObject Kasumi = null;
-    public GameObject Shin = null;
-    public GameObject Kuda = null;
+    public GameObject Kasumi;
+    public GameObject Shin;
+    public GameObject Kuda;
     public int TextCount = 0;
     private SearchField search;
 
