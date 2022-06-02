@@ -22,6 +22,9 @@ public class BattleScene : MonoBehaviour
         scene = gameObject.AddComponent<Scene>();
         player = gameObject.AddComponent<Player>();
         enemy = gameObject.AddComponent<Enemy>();
+
+        enemy.GetSetEnemyHP = 20;
+        player.GetSetPlayerHP = 10;
     }
 
     // Update is called once per frame
@@ -55,7 +58,7 @@ public class BattleScene : MonoBehaviour
             scene.ChangeScene((int)Scene.SceneName.GameClear);
         }
 
-        if (Input.GetMouseButton(0))
+        if (enemy.GetSetEnemyHP <= 0)
         {
             if(player.GetSearch(1))
             {
@@ -100,6 +103,5 @@ public class BattleScene : MonoBehaviour
                 scene.ChangeScene((int)Scene.SceneName.Search09);
             }
         }
-
     }
 }
